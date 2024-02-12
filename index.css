@@ -8,6 +8,7 @@ body {
     --h3: 2em;
     --charcol: #36454F;
     --black: #101314;
+    font-size: 16px;
 }
 
 .container-horizontal {
@@ -325,7 +326,7 @@ body {
     width: 100px;
     display: inline-block;
     background-color: var(--charcol);
-    margin: 50px;
+    margin: 10px;
     position: absolute;
     bottom: 0px;
 }

@@ -68,14 +68,16 @@ var reveal_effect = () => {
 //-------------- skill bar moving effect------------
 function skill_bar_moving() {
     var skills_element = document.querySelector('.moving-bar').children
+
     console.log(skills_element)
     var window_width = window.innerWidth
-    console.log(window_width)
+    var element_width = Math.floor(window_width / skills_element.length)
+    console.log(window_width, element_width)
     setInterval(() => {
         Array.from(skills_element).map(
             (e, i) => {
                 if (!e.style.left) {
-                    e.style.left = i * 250 + "px"
+                    e.style.left = i * element_width + "px"
                 } else {
                     let current_width = parseInt(e.style.left) + 1 + "px"
                     if (parseInt(e.style.left) >= window_width) {
