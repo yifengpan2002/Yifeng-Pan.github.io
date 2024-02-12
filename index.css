@@ -1,14 +1,10 @@
-body {
-    height: 3000px;
-}
-
 * {
     margin: 0;
     padding: 0;
     --h3: 2em;
     --charcol: #36454F;
     --black: #101314;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .container-horizontal {
@@ -342,6 +338,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .contact {
@@ -353,6 +350,10 @@ body {
     flex-direction: column;
 }
 
+.contact>h3 span,
+.contact>h3 i {
+    font-size: 1em;
+}
 
 .contact-wrapper h3 {
     font-size: 4em;
