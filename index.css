@@ -255,6 +255,8 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    overflow: clip;
+    overflow-clip-margin: content-box;
 }
 
 .skill-wrapper>h3 {
@@ -338,12 +340,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .contact {
-    width: 60vw;
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,6 +359,7 @@
     text-align: center;
     color: violet;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 form {
