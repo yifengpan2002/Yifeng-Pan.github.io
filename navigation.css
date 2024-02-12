@@ -1,0 +1,81 @@
+/* This css is for only navigation */
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both
+}
+
+
+/* .nav-bar {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.5em;
+    float: left;
+padding: 0.5em;
+display: inline-block;
+}
+
+.nav {
+    float: right;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list li {
+    float: left;
+    padding: 0.5em 1.5em;
+    font-size: 1.35em;
+}
+
+*/
+
+/* ------------------second solution----------------- */
+.nav-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navigation-bar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 6em;
+    padding: 0 8em;
+}
+
+.name {
+    font-size: 2.5em;
+    line-height: 2.5em;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.5em;
+    line-height: 4em;
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5em;
+    height: 100%;
+}
+
+nav a:last-child {
+    padding-right: 0;
+}
+
+nav a:hover {
+    color: purple;
+}
