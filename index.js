@@ -68,11 +68,8 @@ var reveal_effect = () => {
 //-------------- skill bar moving effect------------
 function skill_bar_moving() {
     var skills_element = document.querySelector('.moving-bar').children
-
-    console.log(skills_element)
     var window_width = window.innerWidth
     var element_width = Math.floor(window_width / skills_element.length)
-    console.log(window_width, element_width)
     setInterval(() => {
         Array.from(skills_element).map(
             (e, i) => {
@@ -91,9 +88,31 @@ function skill_bar_moving() {
         )
     }, 50);
 }
+var nav = document.querySelector(".nav-wrapper")
+var nav_height = nav.offsetHeight
+var sections = document.getElementsByTagName('section')
+var links = document.querySelectorAll('.nav-right a')
+function nav_active() {
+    let top = window.scrollY
+    Array.from(sections).forEach(element => {
+        let offset = element.offsetTop - nav_height
+        let height = element.offsetHeight
+        let id = element.getAttribute('id')
+        console.log(id)
+        if (top >= offset && height + offset > top) {
+            links.forEach(link => {
+                link.classList.remove("active")
+                document.querySelector(".nav-right a[href*=" + id + "]").classList.add("active")
+            })
+        }
+    });
+    console.log(sections.length)
+
+}
 
 window.onscroll = () => {
     reveal_effect()
+    nav_active()
 }
 
 window.onload = () => {

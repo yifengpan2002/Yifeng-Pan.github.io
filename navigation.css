@@ -7,37 +7,6 @@
 }
 
 
-/* .nav-bar {
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.logo {
-    font-size: 2.5em;
-    float: left;
-padding: 0.5em;
-display: inline-block;
-}
-
-.nav {
-    float: right;
-}
-
-.nav-list {
-    list-style-type: none;
-}
-
-.nav-list li {
-    float: left;
-    padding: 0.5em 1.5em;
-    font-size: 1.35em;
-}
-
-*/
 
 /* ------------------second solution----------------- */
 .nav-wrapper {
@@ -70,6 +39,7 @@ nav a {
     color: white;
     padding: 0 1.5em;
     height: 100%;
+    transition: 0.5s;
 }
 
 nav a:last-child {
@@ -77,5 +47,9 @@ nav a:last-child {
 }
 
 nav a:hover {
+    color: purple;
+}
+
+.nav-right .active {
     color: purple;
 }
