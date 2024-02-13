@@ -55,8 +55,6 @@ var reveal_effect = () => {
     var reveal_top = text.getBoundingClientRect().top
     var reveal_point = 150
 
-    // console.log(text, window_height, reveal_top, reveal_point)
-
     if (reveal_top < window_height - reveal_point) {
         text.classList.add('reveal-active')
     } else {
@@ -98,7 +96,6 @@ function nav_active() {
         let offset = element.offsetTop - nav_height
         let height = element.offsetHeight
         let id = element.getAttribute('id')
-        console.log(id)
         if (top >= offset && height + offset > top) {
             links.forEach(link => {
                 link.classList.remove("active")
@@ -106,8 +103,6 @@ function nav_active() {
             })
         }
     });
-    console.log(sections.length)
-
 }
 
 window.onscroll = () => {
