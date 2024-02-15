@@ -101,7 +101,7 @@
 .home-img {
     position: absolute;
     right: 10vw;
-    top: 30%;
+    top: 25%;
     width: 30vh;
     border-radius: 50%;
 
@@ -418,4 +418,11 @@ form button {
 form button:hover {
     background-color: #fff;
     /* color: violet; */
+}
+
+/* ---------css for smaller screen-------- */
+@media screen and (max-width:1450px) {
+    .home-img {
+        display: none;
+    }
 }
